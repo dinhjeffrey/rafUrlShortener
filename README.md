@@ -1,7 +1,4 @@
-# Author
-
-
-[Github](https://github.com/Rafase282) | [FreeCodeCamp](http://www.freecodecamp.com/rafase282) | [CodePen](http://codepen.io/Rafase282/) | [LinkedIn](https://www.linkedin.com/in/rafase282) | [Blog/Site](https://rafase282.wordpress.com/) | [E-Mail](mailto:rafase282@gmail.com)
+#http://charmander-url.herokuapp.com/
 
 # FreeCodeCamp API Basejump: URL Shortener Microservice
 ## User stories:
@@ -12,20 +9,20 @@
 ## Example creation usage:
 
 ```js
-https://little-url.herokuapp.com/new/https://www.google.com
-https://little-url.herokuapp.com/new/http://foo.com:80
+https://charmander-url.herokuapp.com/new/https://www.google.com
+https://charmander-url.herokuapp.com/new/http://foo.com:80
 ```
 
 ## Example creation output:
 
 ```js
-{"original_url":"http://foo.com:80","short_url":"https://little-url.herokuapp.com/8170"}
+{"original_url":"http://foo.com:80","short_url":"https://charmander-url.herokuapp.com/8170"}
 ```
 
 ## Usage:
 
 ```
-https://little-url.herokuapp.com/2871
+https://charmander-url.herokuapp.com/2871
 ```
 
 ### Will redirect to:
