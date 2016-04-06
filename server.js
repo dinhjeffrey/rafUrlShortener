@@ -8,8 +8,9 @@ var api = require('./app/api/url-shortener.js');
 require('dotenv').config({
   silent: true
 });
+
 var app = express();
-mongo.MongoClient.connect(process.env.MONGOLAB_URI || 'mongodb://localhost:27017/url-shortener', function(err, db) {
+mongo.MongoClient.connect("mongodb://admin:password@ds015710.mlab.com:15710/charmander-url", function(err, db) {
 
   if (err) {
     throw new Error('Database failed to connect!');

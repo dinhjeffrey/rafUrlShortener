@@ -1,4 +1,6 @@
 'use strict';
+
+var APP_URL="http://charmander-url.herokuapp.com/"
 module.exports = function(app, db) {
 
   app.route('/:url')
@@ -8,8 +10,8 @@ module.exports = function(app, db) {
   app.get('/new/:url*', handlePost);
 
   function handleGet(req, res) {
-    var url = process.env.APP_URL + req.params.url;
-    if (url != process.env.APP_URL + 'favicon.ico') {
+    var url = APP_URL + req.params.url;
+    if (url != APP_URL + 'favicon.ico') {
       findURL(url, db, res);
     }
   }
@@ -21,7 +23,7 @@ module.exports = function(app, db) {
     if (validateURL(url)) {
       urlObj = {
         "original_url": url,
-        "short_url": process.env.APP_URL + linkGen()
+        "short_url": APP_URL + linkGen()
       };
       res.send(urlObj);
       save(urlObj, db);
