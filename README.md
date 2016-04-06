@@ -1,5 +1,4 @@
 # Author
-![@Rafase282](https://avatars0.githubusercontent.com/Rafase282?&s=128)
 
 Created by Rafase282
 
