@@ -10,7 +10,7 @@ require('dotenv').config({
 });
 
 var app = express();
-mongo.MongoClient.connect("mongodb://admin:password@ds015710.mlab.com:15710/charmander-url", function(err, db) {
+mongo.MongoClient.connect("mongodb://localhost:27017/test"||"mongodb://admin:password@ds015710.mlab.com:15710/charmander-url", function(err, db) {
 
   if (err) {
     throw new Error('Database failed to connect!');
